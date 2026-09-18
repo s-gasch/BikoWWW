@@ -1,0 +1,391 @@
+{
+  "title": "Support",
+  "version": "1.0",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "italic": true,
+          "text": "Last updated: 2026-08-11"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "text": "Need help with BikePilot? This page covers common questions, troubleshooting steps, and how to reach us for further support."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Contact"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "text": "If your question isn't answered below, email us and we'll get back to you as soon as we can:"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "bold": true,
+          "text": "Email:"
+        },
+        {
+          "text": " "
+        },
+        {
+          "href": "mailto:sebastian.gasch@outlook.com",
+          "text": "sebastian.gasch@outlook.com"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "text": "Please include the following when reporting an issue, so we can help you faster:"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "text": "App version (Settings → About in the App)"
+          }
+        ],
+        [
+          {
+            "text": "Your iOS version and device model"
+          }
+        ],
+        [
+          {
+            "text": "Steps to reproduce the issue"
+          }
+        ],
+        [
+          {
+            "text": "Screenshots or screen recordings, if applicable"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "GPS and location tracking"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "bold": true,
+          "text": "My speed/distance/route seems inaccurate."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "text": "GPS accuracy depends on your device, weather, and surroundings (tall buildings, tunnels, dense tree cover, etc. can degrade the signal). Make sure Location access is set to \"While Using the App\" or \"Always\" in iOS Settings → Privacy & Security → Location Services → BikePilot, and that Location Services is enabled system-wide."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "bold": true,
+          "text": "The App stopped tracking my ride when I locked my phone / switched apps."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "text": "BikePilot uses background location updates to keep recording while your device is locked or you're using another app. Make sure Location permission is granted and that Low Power Mode isn't aggressively limiting background activity, which can affect GPS update frequency on some devices."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Bluetooth sensors"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "bold": true,
+          "text": "My heart rate / speed & cadence / temperature sensor won't connect."
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "text": "Make sure the sensor is powered on and within range (usually 1–2 meters during pairing)."
+          }
+        ],
+        [
+          {
+            "text": "Confirm Bluetooth is enabled in iOS Settings and that BikePilot has Bluetooth permission (Settings → Privacy & Security → Bluetooth → BikePilot)."
+          }
+        ],
+        [
+          {
+            "text": "Some sensors can only be connected to one app at a time — disconnect the sensor from any other app (e.g. another cycling or fitness app) before connecting it in BikePilot."
+          }
+        ],
+        [
+          {
+            "text": "Try restarting the sensor (remove and reinsert the battery, if applicable) and re-scanning from the App's sensor settings."
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "bold": true,
+          "text": "My sensor keeps disconnecting mid-ride."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "text": "This is usually caused by low sensor battery, distance from the device, or Bluetooth interference. Replacing the sensor battery and keeping your phone within range typically resolves this."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Altitude and grade"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "bold": true,
+          "text": "Altitude/grade readings look off."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "text": "BikePilot uses your device's barometer along with GPS to estimate altitude and slope grade. Barometric readings can drift slightly over time or be affected by rapid weather changes; this is a hardware limitation rather than an App malfunction."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "GPX import/export"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "bold": true,
+          "text": "How do I export a ride?"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "text": "Open the ride from your ride history and use the share/export option to save it as a "
+        },
+        {
+          "code": true,
+          "text": ".gpx"
+        },
+        {
+          "text": " file, which you can then save to the Files app, AirDrop to another device, or share via email or another app."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "bold": true,
+          "text": "How do I import a GPX track (e.g. for navigation)?"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "text": "Use the import option in the App and choose a "
+        },
+        {
+          "code": true,
+          "text": ".gpx"
+        },
+        {
+          "text": " file from the Files app (Documents/Downloads folder access is required — you'll be prompted the first time)."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "BikePilot PRO subscription"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "bold": true,
+          "text": "How do I subscribe to / cancel BikePilot PRO?"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "text": "Subscriptions are managed entirely through your Apple ID. To subscribe, use the upgrade prompt inside the App. To view, change, or cancel your subscription, go to iOS Settings → [your name] → Subscriptions, or the App Store app → your profile icon → Subscriptions."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "bold": true,
+          "text": "I subscribed but PRO features aren't unlocked."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "text": "Try using the \"Restore Purchases\" option in the App's settings/upgrade screen. If the issue persists after restarting the App, contact us with your Apple ID email (do not share your Apple ID password) and the approximate purchase date so we can help investigate."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "bold": true,
+          "text": "I was charged but didn't intend to renew / want a refund."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "text": "Refunds and billing are handled directly by Apple, not by the Developer. You can request a refund at "
+        },
+        {
+          "href": "https://reportaproblem.apple.com",
+          "text": "reportaproblem.apple.com"
+        },
+        {
+          "text": " or via Settings → [your name] → Subscriptions on your device."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Privacy"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "text": "BikePilot stores all your ride data locally on your device and does not operate a backend server. See our "
+        },
+        {
+          "href": "privacy-policy.html",
+          "text": "Privacy Policy"
+        },
+        {
+          "text": " for full details on what data the App accesses and how it's used."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "General troubleshooting"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "text": "Make sure you're running the latest version of BikePilot from the App Store."
+          }
+        ],
+        [
+          {
+            "text": "Restarting the App or your device resolves many transient issues (e.g. sensor connection problems, GPS lock delays)."
+          }
+        ],
+        [
+          {
+            "text": "If the App crashes or behaves unexpectedly, please email us a description of what happened along with your device model and iOS version so we can investigate."
+          }
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Feature Requests and Feedback"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "text": "We'd love to hear your ideas for new features or improvements. Send suggestions to "
+        },
+        {
+          "href": "mailto:sebastian.gasch@outlook.com",
+          "text": "sebastian.gasch@outlook.com"
+        },
+        {
+          "text": " — we read every message."
+        }
+      ]
+    }
+  ]
+}
