@@ -10,7 +10,7 @@ import {
   renderConsentBanner,
 } from "./language.js";
 
-// Renders home page copy (data-i18n / data-i18n-attr hooks) from www/index/<lang>.json.
+// Renders home page copy (data-i18n / data-i18n-attr hooks) from index/<lang>.json.
 
 function getPath(data, path) {
   return path.split(".").reduce((value, key) => (value == null ? undefined : value[key]), data);
@@ -42,7 +42,7 @@ function applyTranslations(doc, data) {
 
 async function fetchHomeData(fetchImpl, baseUrl, language) {
   const resolvedLanguage = resolveSupportedLanguage(language) || DEFAULT_LANGUAGE;
-  const requestUrl = new URL(`www/index/${resolvedLanguage}.json`, baseUrl).href;
+  const requestUrl = new URL(`index/${resolvedLanguage}.json`, baseUrl).href;
   const response = await fetchImpl(requestUrl);
 
   if (!response.ok) {
