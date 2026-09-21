@@ -276,14 +276,15 @@ main, footer {
    ========================================================= */
 
 /*
-    Każda karta jest przesunięta o 3 sekundy względem
-    poprzedniej.
+    6 kart dzieli równo 15-sekundowy cykl karuzeli,
+    każda przesunięta o 2.5 sekundy względem poprzedniej.
 
     1 = 0s
-    2 = -3s
-    3 = -6s
-    4 = -9s
-    5 = -12s
+    2 = -2.5s
+    3 = -5s
+    4 = -7.5s
+    5 = -10s
+    6 = -12.5s
 */
 
 .hero-shot-1 {
@@ -292,23 +293,28 @@ main, footer {
 }
 
 .hero-shot-2 {
-    animation-delay: -3s;
+    animation-delay: -2.5s;
     z-index: 20;
 }
 
 .hero-shot-3 {
-    animation-delay: -6s;
+    animation-delay: -5s;
     z-index: 30;
 }
 
 .hero-shot-4 {
-    animation-delay: -9s;
+    animation-delay: -7.5s;
     z-index: 40;
 }
 
 .hero-shot-5 {
-    animation-delay: -12s;
+    animation-delay: -10s;
     z-index: 50;
+}
+
+.hero-shot-6 {
+    animation-delay: -12.5s;
+    z-index: 60;
 }
 
 
@@ -321,17 +327,17 @@ main, footer {
     /*
      * POZYCJA 1
      *
-     * lewy tył
+     * lewy tył (wejście)
      */
     0%,
-    16% {
+    13% {
 
         transform:
             translateX(-112%)
-            translateY(50px)
+            translateY(-30px)
             translateZ(-45px)
             scale(.86)
-            rotateZ(-11deg)
+            rotateZ(-5deg)
             rotateY(17deg);
     }
 
@@ -339,10 +345,28 @@ main, footer {
     /*
      * POZYCJA 2
      *
+     * podejście do środka
+     */
+    16.67%,
+    30% {
+
+        transform:
+            translateX(-81%)
+            translateY(-10px)
+            translateZ(-8px)
+            scale(.93)
+            rotateZ(-2deg)
+            rotateY(9deg);
+    }
+
+
+    /*
+     * POZYCJA 3
+     *
      * środek / przód
      */
-    20%,
-    36% {
+    33.33%,
+    46% {
 
         transform:
             translateX(-50%)
@@ -355,55 +379,55 @@ main, footer {
 
 
     /*
-     * POZYCJA 3
+     * POZYCJA 4
      *
      * prawy tył
      */
-    40%,
-    56% {
+    50%,
+    63% {
 
         transform:
-            translateX(54%)
-            translateY(50px)
+            translateX(27%)
+            translateY(-30px)
             translateZ(-45px)
             scale(.86)
-            rotateZ(11deg)
+            rotateZ(2deg)
             rotateY(-17deg);
-    }
-
-
-    /*
-     * POZYCJA 4
-     *
-     * dalszy prawy
-     */
-    60%,
-    76% {
-
-        transform:
-            translateX(88%)
-            translateY(82px)
-            translateZ(-105px)
-            scale(.77)
-            rotateZ(14deg)
-            rotateY(-21deg);
     }
 
 
     /*
      * POZYCJA 5
      *
+     * dalszy prawy
+     */
+    66.67%,
+    80% {
+
+        transform:
+            translateX(61%)
+            translateY(-40px)
+            translateZ(-105px)
+            scale(.77)
+            rotateZ(3.5deg)
+            rotateY(-21deg);
+    }
+
+
+    /*
+     * POZYCJA 6
+     *
      * najdalszy tył
      */
-    80%,
+    83.33%,
     96% {
 
         transform:
-            translateX(122%)
-            translateY(105px)
+            translateX(95%)
+            translateY(-50px)
             translateZ(-150px)
             scale(.70)
-            rotateZ(17deg)
+            rotateZ(5deg)
             rotateY(-24deg);
     }
 
@@ -420,10 +444,10 @@ main, footer {
 
         transform:
             translateX(-112%)
-            translateY(50px)
+            translateY(-30px)
             translateZ(-45px)
             scale(.86)
-            rotateZ(-11deg)
+            rotateZ(-5deg)
             rotateY(17deg);
     }
 }
